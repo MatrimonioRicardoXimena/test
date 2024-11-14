@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find The Cones!</title>
+    <style>
+        .loadingscreen {
+            filter: opacity(0.5);
+            width: 480px;
+            object-fit: contain;
+            float: bottom;
+            margin: 100px;
+            z-index: 2;
+            position: relative;
+            margin-left: 425px;
+            top: -1000px;
+        }
+
+        .menubg {
+            width: 480px;
+            object-fit: contain;
+            float: bottom;
+            margin: 100px;
+            margin-left: 425px;
+            margin-bottom: 0px;
+        }
+
+        .menubtn {
+            width: 120px;
+            object-fit: contain;
+            float: bottom;
+            z-index: 1;
+            position: relative;
+            margin: 100px;
+            margin-left: 425px;
+            left: 185px;
+            top: -225px;
+            box-shadow: 1px 15px 20px rgba(0, 0, 0, 0.7);
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.22s;
+        }
+
+        .menubtn:hover {
+            width: 130px;
+            left: 180px;
+            top: -225.8px;
+            filter: brightness(1.2);
+            box-shadow: 1px 15px 20px rgba(0, 0, 0, 0.6);
+        }
+
+        .menubtn:active {
+            width: 115px;
+            left: 187.5px;
+            top: -223px;
+            filter: brightness(1.75);
+            box-shadow: 1px 15px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        body {
+            overflow-y: hidden;
+        }
+    </style>
+</head>
+
+<body style="background-color: black;">
+    <img class="menubg" src="./images/menubg.png">
+    <img class="menubtn" src="./images/menuplay.png">
+    <img class="loadingscreen" src="./images/loadingscreen.png">
+</body>
+
+</html>
